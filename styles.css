@@ -4,13 +4,48 @@ body {
     padding: 20px;
 }
 
+
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
 section {
     margin-bottom: 20px;
+}
+
+.circle-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 300px;
+    margin-top: 50px;
+}
+
+.circle {
+    text-align: center;
+}
+
+.circle img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.circle img:hover {
+    transform: scale(1.1);
+}
+
+.circle a {
+    text-decoration: none;
+    color: black;
+}
+
+.circle p {
+    margin-top: 10px;
+    font-weight: bold;
 }
